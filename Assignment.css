@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Salb&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+.containerr {
+    width:100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+
+
+
+
+
+
+/* header */
+.header { 
+    width:100%;
+    margin: 0 auto;
+    background-color: #363636;
+    /* overflow: hidden; */ /* we need overflow hidden only when we use float - up-down sizing */
+    /* if still using overflow: hidden problems with drop down menu */
+
+    display: flex;
+    align-items: center; /* i need this to have them vertically centered */
+
+    position: fixed;
+    top: 0;
+
+}
+
+.logo {
+    width:45%;
+    /* float: left; */
+    padding: 0px 5px;
+
+}
+
+.logo > img {
+    width: 70%;
+    height: auto;
+}
+
+.menu {
+    width:55%;
+    /* float: right; */ /* right flex - alignment */
+    position: relative;
+    /* border: 1px solid red; */
+
+}
+
+.menu > ul {
+    width:100%;
+    display: flex; /* i need this to be on a line */
+    justify-content: space-around;
+    /* align-items: center; */
+    /* padding:45px; */
+}
+
+.menu li {
+    /* display: inline-block; */
+    list-style: none;
+    line-height: 40px;
+ }
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+/* .menu >ul>li>ul li {
+    display: flex;
+} */
+
+
+.menu >ul ul {
+    display: none;
+}
+
+.menu >ul>li:hover>ul {
+    display: block;
+    background-color: #363636;
+    width: 170px;
+    position: absolute;
+    top: 40px;
+}
+
+.toggle-btn {
+    width: 55%;
+    /* border: 1px solid red; */
+    display:none;
+    justify-content: flex-end; /* the btn will shift to the right display: flex is prerequisite for this purpose*/
+    margin-right: 10px;
+}
+
+.toggle-btn > button {
+    width: 50px;
+    height: 50px;
+}
+
+.toggle-menu {
+    display:none;
+    padding-top: 120px;
+    text-align: center;
+    line-height: 30px;  
+}
+
+.toggle-menu >ul>li>a {
+    font-size: 26px;
+    color: black;
+}
+
+.toggle-menu >ul>li {
+    padding-top: 20px;
+}
+
+/* header */
+
+
+
+
+
+/* slider - main picture */
+.slider{
+    width: 100%;
+    height: 70%;
+    background-image: url('appletrees.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* paralax effect */
+}
+
+.title {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 60px;
+}
+
+.title p {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;    
+    font-size: 40px;
+    color: white;
+}
+
+
+.subtitle {
+    width:60%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+.subtitle p {
+    text-align: center;
+    font-family: 'Quicsand', sans-serif;
+    font-size: 30px;
+    color: rgb(243,237,237); 
+}
+/* slider  */
+
+
+
+
+
+
+/* main section */
+.main {
+    width: 100%;
+    margin: 0 auto; 
+    padding: 40px 25px;
+
+}
+
+.main-title {
+    width:100%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+
+}
+
+.main-title >h1 {
+    font-family: 'Roboto Slab', serif;
+
+}
+
+.main-text {
+    width:100%;
+    margin: 0 auto;
+}
+
+.main-text p {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 25px;
+}
+/* main section */
+
+
+
+
+
+
+
+/* footer */
+.footer {
+    width:100%;
+    margin: 0 auto;
+    padding: 30px 20px;
+    overflow: hidden;
+    background-color: #363636;
+
+    display: flex;
+    align-items: center;
+}
+
+.copyrights {
+    width: 78%;
+    /* float: left; */
+
+
+}
+
+.copyrights > p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.socials {
+    width: 22%;
+    /* float: right; */
+    display: flex; /* to be on the same line and not top bottom */
+    align-items: center; /* so as to be aligned horizontally */
+    /* align-items: flex-end; */
+}
+
+.socials > p {
+    margin-right: 10px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+
+.fab {
+    font-size: 30px;
+    color: blue;
+    margin-right: 5px;
+}
+
+/* footer  */
+
+
+
+
+
+/* media queries for toggle btn control - have toggle bellow 992*/
+/* js file for the operation of opening the toogle menu */
+@media (max-width: 992px) {
+    .toggle-btn {
+        display:flex;
+    }
+
+    .menu {
+        display:none;
+    }
+}
+/* media queries for toggle btn control */
+
+
+
+
+
+/* media queries for the different components - size control*/
+@media (max-width: 760px){
+    .logo > img {
+        width: auto;
+        height: 50px;
+    }
+
+    .title > p {
+        font-size: 30px;
+    }
+
+    .subtitle > p {
+        font-size: 25px;
+    }
+
+    .copyrights >p {
+        font-size: 11px;
+    }
+
+    .socials >p {
+        font-size: 12px;
+    }
+
+    .socials {
+        /* border: 1px solid red; */
+        width: 27%;
+    }
+
+    .copyrights {
+        width: 73%;
+    }
+
+}
+
+@media (max-width: 576px){
+    .logo > img {
+        width: auto;
+        height: 40px;
+    }
+
+    .title > p {
+        font-size: 24px;
+    }
+
+    .subtitle > p {
+        font-size: 18px;
+    }
+
+
+    .toggle-btn > button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .main-title >h1 {
+        font-size: 24px;
+    }
+    .main-text >p {
+        font-size: 14px;
+    }
+
+    .socials-icons {
+        display: flex;
+    }
+    .copyrights >p {
+        font-size: 10px;
+    }
+
+    .socials >p {
+        font-size: 11px;
+    }
+
+    .socials {
+        flex-direction: column; /* one on top of the other */
+        align-items: flex-end;
+        width:30%;
+    }
+
+    .copyrights {
+        width: 70%;
+        
+    }
+
+}
+
+@media (max-width: 420px) {
+    .logo > img {
+        width: auto;
+        height: 30px;
+    }
+
+    .toggle-button > button {
+        font-size: 20px;
+    }
+
+    .title > p {
+        font-size: 16px;
+    }
+
+    .subtitle > p {
+        font-size: 14px;
+    }
+
+    .main-title >h1 {
+        font-size: 18px;
+    }
+
+    .main-text > p {
+        font-size: 12px;
+    }
+
+    .copyrights >p {
+        font-size: 8px;
+    }
+
+    .socials >p {
+        font-size: 10px;
+    }
+
+    .socials {
+        /* border: 1px solid red; */
+        width: 35%;
+    }
+
+    .copyrights {
+        width: 65%;
+    }
+
+
+} 
+/* media queries for the different components*/

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - About Us</title>
+    <link rel="stylesheet" href="Assignment.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="Assignment.js"></script>
+</head>
+<body>
+
+    <div class="containerr">
+        <div class="header">
+            <div class="logo"><img src="produce.png" alt="Dimitriou Produce"></div>
+            <div class="menu">
+                <ul>
+                    <li><i class="fas fa-home"></i><a href="#"> Home</a>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Vision</a></li>
+                        </ul>
+                    </li>
+                    <li><i class="fas fa-leaf"></i><a href="#"> Our Produce</a>
+                        <ul>
+                            <li><a href="">Vegatables</a></li>
+                            <li><a href="">Fruits</a></li>
+                        </ul>
+                    </li>
+                    <li><i class="fas fa-cart-plus"></i><a href="#"> Orders</a>
+                        <ul>
+                            <li><a href="">Food Service / Catering</a></li>
+                            <li><a href="">Bakeries</a></li>
+                            <li><a href="">Retail</a></li>
+                            <li><a href="">Food Industry</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="toggle-btn">
+                <button type="button" onclick="toggleButtonHandler()">&#9776</button>
+            </div>
+
+        </div>
+
+        <!-- toggle menu appears on hover event of toggle btn -->
+        <div class="toggle-menu">
+            <ul>
+                <li><i class="fa-thin fa-house"></i><a href="#">Home</a>
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Vision</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Our Produce</a>
+                    <ul>
+                        <li><a href="">Vegatables</a></li>
+                        <li><a href="">Fruits</a></li>
+                    </ul>
+                </li>
+                <li><i class="fa-solid fa-cart-shopping"></i><a href="#">Orders</a>
+                    <ul>
+                        <li><a href="">Food Service / Catering</a></li>
+                        <li><a href="">Bakeries</a></li>
+                        <li><a href="">Retail</a></li>
+                        <li><a href="">Food Industry</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+
+        <div class="slider">
+            <div class="title"><p>DIMITRIOU MUTOUDIS FARM</p></div>
+            <div class="subtitle"><p>We own one of the most renowned farms in north Greece... Bear with us!</p></div>
+        </div>
+        <div class="main">
+            <div class="main-title"><h1>About Us</h1></div>
+            <div class="main-text"><p>We are passionate about farming and we take pride in the fruits and vegetables we grow.  We use only the highest 
+                standards of organic growing practices and food safety.  
+                Our produce is grown locally so it is vine ripened before it is picked and therefore it tastes better. 
+                 
+                When you buy our fruits and vegetables you are supporting a local company that hires local employees and gives back to the community.   Come visit us and see for yourself!   
+            </p>
+            <p>
+                We guarantee you that you will fine a wide variety of different fruits that will meet your expectations. 
+                We boast a 20tn apple harvesting. We grow a variaty of apples in our farms using the least quantity of chemical pesticides possible. 
+                However, we should not ignore the vegetables that we grow. We own a 20k square meters farm awash with tomatoes, cucumbers, eggplants etc.
+                Please check "Our Produce" and find more about the products that we retail.
+            </p>
+            <p>
+                We also provide you with food transport solutions. This entails that we can bring the fruits and the vegetables safely at your facilities.
+                You can find out more about this service in our "Order" menu.
+            </p>
+            <p>
+                Thank you for selecting us!
+            </p>
+            </div>
+        </div>
+
+        <!-- Remarketing -leads- Newsletters -->
+        <div class="crd card-body">
+            <form>
+                <div class="mx-auto form-group input-group  col-8 col-sm-7 col-md-6 col-lg-5 col-xl-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-inbox"></i></i></span>
+                    </div>
+                    <input type="email" class="form-control" placeholder="YourEmailAddress">
+                </div>
+
+                <div class="d-flex justify-content-center mb-4">
+                    <button type="submit" class="btn btn-success">
+                        Receive Newsletters!
+                    </button>
+                </div>
+            </form>
+        </div>
+        <!--Remarketing - Newsletters -->
+         
+        
+        <div class="footer">
+            <div class="copyrights">
+                <p>&copy; Dimitriou Mutoudis S.A., All rights preserved</p>
+            </div>
+            <div class="socials">
+                <p>Follow Us</p>
+                <div class="socials-icons">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
